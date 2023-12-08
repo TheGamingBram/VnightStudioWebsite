@@ -1,0 +1,53 @@
+*{
+  user-select: none;
+}
+
+html,body{
+  min-height:100%
+}
+img{
+  max-width:100%
+}
+
+.panel {
+  position:relative;
+  background: #111 url(../IMG/MKVNBackground.png)  center center repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+.panel .logo,
+.panel .start{
+  position:absolute;
+  top:0
+}
+.start{
+  display:block;
+  font-size:10em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #1cb128,
+                    #57098b, #9e229e, #3ca5b8);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+.panel .logo, .panel .start {
+  top:10%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  filter: drop-shadow(0 0 6px  rgba(255,255,255,.5))
+}
+.panel .kart{
+  width:100%;
+  height:auto;
+  object-fit:cover
+}
+
+.panel .start{
+ width:fit-content;
+  top:80%;
+}
